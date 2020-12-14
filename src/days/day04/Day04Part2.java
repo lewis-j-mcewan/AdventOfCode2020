@@ -1,4 +1,4 @@
-package day04;
+package days.day04;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,7 +17,7 @@ public class Day04Part2 {
         List<HashMap<String, String>> passports = new ArrayList<>();
         int requiredFields = 7;
 
-        File file = new File("src/day04/Day04.txt");
+        File file = new File("src/days/day04/Day04.txt");
         BufferedReader reader;
         try {
             reader = new BufferedReader(new FileReader(file));

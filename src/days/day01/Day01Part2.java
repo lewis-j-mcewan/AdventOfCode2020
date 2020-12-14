@@ -1,4 +1,4 @@
-package day01;
+package days.day01;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,7 +7,7 @@ import helperClasses.LoadFile;
 
 public class Day01Part2 {
     public static void main(String[] args) throws IOException {
-        List<String> input = LoadFile.FileToString("src/day01/Day01Input.txt");
+        List<String> input = LoadFile.FileToString("src/days/day01/Day01.txt");
         
         for(int i = 0; i < input.size(); i++){
             for(int j = 0; j < input.size(); j++){

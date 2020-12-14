@@ -1,14 +1,14 @@
-package day02;
+package days.day02;
 
 import java.io.IOException;
 import java.util.List;
 
 import helperClasses.LoadFile;
 
-public class Day02Part2 {
+public class Day02Part1 {
 
     public static void main(String[] args) throws IOException {
-        List<String> input = LoadFile.FileToString("src/day02/Day02.txt");
+        List<String> input = LoadFile.FileToString("src/days/day02/Day02.txt");
         
         int total = 0;
         for(String line : input){
@@ -25,11 +25,13 @@ public class Day02Part2 {
             System.out.println(letter);
             System.out.println(text);
 
-            char[] characters = text.toCharArray();
-            System.out.println(characters[low-1]);
-            System.out.println(characters[high-1] + "\n");
-            if( (characters[low-1] == letter && characters[high-1] != letter)
-                || (characters[low-1] != letter && characters[high-1] == letter)){
+            int count = 0;
+            for(char ch : text.toCharArray()){
+                if(ch == letter){
+                    count++;
+                }
+            }
+            if(count >= low && count <= high){
                 total++;
             }
         }

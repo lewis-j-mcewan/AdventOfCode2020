@@ -10,7 +10,8 @@ import java.util.List;
 import java.util.Map;
 
 public class LoadFile {
-    public static List<String> FileToString(String loc) throws IOException {
+    
+	public static List<String> FileToString(String loc) throws IOException {
         File file = new File(loc);
         BufferedReader reader;
         try {

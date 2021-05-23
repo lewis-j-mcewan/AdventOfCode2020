@@ -18,6 +18,7 @@ public class Day01Part1 {
 		}
 		int output = calculateNumbers();
 		System.out.println(output);
+		
 	}
 	
 	private int calculateNumbers() {

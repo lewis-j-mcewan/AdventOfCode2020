@@ -10,6 +10,7 @@ public class Day01Part1 {
 	private List<String> input;
 	
 	public Day01Part1() {
+		
 		try {
 			input = LoadFile.FileToString("src/days/day01/Day01.txt");
 		} catch (IOException e) {
